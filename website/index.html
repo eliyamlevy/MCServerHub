@@ -31,43 +31,64 @@
 
     <body>
         <!-- navbar -->
-    <nav class="navbar navbar-expand-sm bg-light navbar-light">
-        <ul class="navbar-nav">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">MCServerStarter</a>
-            </li>
-            <li class="nav-item disabled">
-                <a class="nav-link" href="#">Server List</a>
-            </li>
-            <li class="nav-item disabled">
-                <a class="nav-link" href="#">Info</a>
-            </li>
-        </ul>
-    </nav>
+        <nav class="navbar navbar-expand-sm bg-light navbar-light">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">MCServerStarter</a>
+                </li>
+                <li class="nav-item disabled">
+                    <a class="nav-link" href="#">Server List</a>
+                </li>
+                <li class="nav-item disabled">
+                    <a class="nav-link" href="#">Info</a>
+                </li>
+            </ul>
+        </nav>
         
+        <!-- Header -->
         <div class="jumbotron text-center">
             <h1>Welcome to MCServerStarter!</h1>
             <p>Use the options below to start a server</p>
-          </div>
-          
-          <div class="container">
+        </div>
+        
+        <!-- Cols -->
+        <div class="container">
             <div class="row">
-              <div class="col-sm-4">
-                <h3>Select a Version</h3>
-                <p>Selections</p>
-                <h3>Local or Public?</h3>
-                <p>Selections</p>
-                <p>This service uses ngrok to make the servers publicly accessible. Please read our <a href="https://www.huntress.com/blog/abusing-ngrok-hackers-at-the-end-of-the-tunnel">warning page</a> about using ngrok on your home network</p>
-              </div>
-              <div class="col-sm-4">
-                <h3>Select Mods</h3>
-                <p>Feature is under construction</p>
-              </div>
-              <div class="col-sm-4">
-                <h3>Start Server</h3>
-                <button type="button" class="btn btn-primary btn-lg">Start</button>
-              </div>
+                <div class="col-sm-4">
+                    <h3>Minecraft Username?</h3>
+                        <div class="form-group">
+                            <label for="usr">Username:</label>
+                            <input type="text" class="form-control" id="usr">
+                        </div>
+                    
+                    <h3>Select a Version</h3>
+                        <p>Currently defaults to 1.17.0 a server</p>
+
+                    <h3>Local or Public?</h3>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="optradio">Local
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="optradio">Public
+                            </label>
+                        </div>
+                        <br />
+                        <p>This service uses ngrok to make the servers publicly accessible. Please read our <a href="https://www.huntress.com/blog/abusing-ngrok-hackers-at-the-end-of-the-tunnel">warning page</a> about using ngrok on your home network</p>
+                </div>
+
+                <div class="col-sm-4">
+                    <h3>Select Mods</h3>
+                        <p>Feature is under construction</p>
+                </div>
+
+                <div class="col-sm-4">
+                    <h3>Start Server</h3>
+                    <button type="button" class="btn btn-primary btn-lg">Start</button>
+                </div>
             </div>
-          </div>
+        </div>
     </body>
 </html>
